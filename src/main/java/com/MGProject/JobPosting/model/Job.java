@@ -8,19 +8,19 @@ public class Job {
 	private double salary;
 	private String requirement;
 	private String description;
-//	private boolean isOpen = false;
+	private boolean isOpen = false;
 	private Address address;
 	
-//	public Job(String title, String companyName, double salary, String requirement, String description,
-//			boolean isOpen, Address address) {
-//		this.title = title;
-//		this.companyName = companyName;
-//		this.salary = salary;
-//		this.requirement = requirement;
-//		this.description = description;
-//	//	this.isOpen = isOpen;
-//		this.address = new Address(address);
-//	}
+	public Job(String title, String companyName, double salary, String requirement, String description,
+			boolean isOpen, Address address) {
+		this.title = title;
+		this.companyName = companyName;
+		this.salary = salary;
+		this.requirement = requirement;
+		this.description = description;
+		this.isOpen = isOpen;
+		this.address = new Address(address);
+	}
 
 	public String getID() {
 		return ID;
@@ -70,13 +70,13 @@ public class Job {
 		this.description = description;
 	}
 
-//	public boolean isOpen() {
-//		return isOpen;
-//	}
-//
-//	public void setOpen(boolean isOpen) {
-//		this.isOpen = isOpen;
-//	}
+	public boolean isOpen() {
+		return isOpen;
+	}
+
+	public void setOpen(boolean isOpen) {
+		this.isOpen = isOpen;
+	}
 
 	public Address getAddress() {
 		return new Address(address);
