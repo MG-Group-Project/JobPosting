@@ -1,6 +1,5 @@
 package com.MGProject.JobPosting.service;
 
+public class JobService {
 
-public class JobService{
-	
 }

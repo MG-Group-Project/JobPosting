@@ -70,11 +70,5 @@ public class Address {
 
 	public void setZipcode(String zipcode) {
 		this.zipcode = zipcode;
-	}
-	
-	public void test() {
-		System.out.println("this is address test");
-	}
-	
-	
+	}	
 }
