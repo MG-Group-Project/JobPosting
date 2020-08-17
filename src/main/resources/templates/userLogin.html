@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>TEST</title>
+    <meta charset="ISO-8859-1">
+    <title>User login page</title>
+    <link rel="stylesheet" th:href="@{css/styles.css}">
 </head>
 <body>
 
+
+<div th:replace="fragments/header"></div>
+<div th:replace="fragments/template"></div>
+
+
+<div class="login-form">
+
+
+    <form action="">
+        <label for="">User Name</label> <br>
+        <input type="text" name="username" placeholder="Enter username"> <br>
+        <label for="">Password</label> <br>
+        <input type="text" name="password" placeholder="Enter password"> <br>
+        <button type="submit">Login</button>
+        <p>Dont have an account? click <a href="UserSignup"> here</a> to create an account</p>
+</div>
+    </form>
+
+
 </body>
+<div th:replace="fragments/footer :: foot"></div>
 </html>

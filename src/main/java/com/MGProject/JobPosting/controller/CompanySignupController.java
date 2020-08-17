@@ -4,11 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class UserLoginController{
+public class CompanySignupController{
 
-    @GetMapping("UserSignup")
-    public String signUp(){
+    @GetMapping("CompanyLogin")
+    public String login(){
 
-      return "userSignup";
+        return "companyLogin";
     }
 }

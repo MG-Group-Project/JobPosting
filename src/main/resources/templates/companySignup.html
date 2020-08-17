@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+
+<head xmlns:th="http://www.thymeleaf.org">
+    <meta charset="ISO-8859-1">
+<!--    <title>Insert title here</title>-->
+    <div th:replace="fragments/header"></div>
 </head>
 <body>
-  
+<div th:replace="fragments/template"></div>
+
+<label for="">Company Name</label> <br>
+<input type="text" name="cName" placeholder="Enter your company name"> <br>
+<label for="">Street</label> <br>
+<input type="text" name="street" placeholder="your street address"> <br>
+<label for="">City</label> <br>
+<input type="text" name="city" placeholder="your city"> <br>
+<label for="">State</label> <br>
+<input type="text" name="state" placeholder="your state"> <br>
+<label for="">Zipcode</label> <br>
+<input type="text" name="zipcode" placeholder="your zip code"> <br>
+<button type="submit">Signup</button>
+
+<p>Already have an account? click <a href="CompanyLogin"> here</a> to login</p>
+<div th:replace="fragments/footer :: foot"></div>
 </body>
-</html>
